@@ -54,8 +54,9 @@ generaBtn.addEventListener("click", function () {
         const prezzoScontato = (costoBiglietto * sconto) / 100; // nuber
         console.log("Prezzo scontato in euro", prezzoScontato);
 
-        const prezzoFinale = costoBiglietto - prezzoScontato;
-        console.log("Prezzo Finale", prezzoFinale);
+        let prezzoFinale = costoBiglietto - prezzoScontato;
+        prezzoFinale =`${prezzoFinale.toFixed(2)} Euro`;
+        console.log("Prezzo Finale in euro", prezzoFinale);
 
         document.getElementById("prezzoFinale").innerHTML = prezzoFinale;
 

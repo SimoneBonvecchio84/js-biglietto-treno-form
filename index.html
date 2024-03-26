@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Biglietto del Trano DOM</title>
 </head>
-<body>
-    <div class="contenitoreBiglietto">
-        
-        <label for="nomeUtente">Nome Utente</label>
-        <input type="text" id="nomeUtente">
-        
-        <label for="prezzoAlKm">Km da Percorrere</label>
-        <input type="text" id="prezzoAlKm">
 
-        <label for="etaUtente">Età Utente</label>
-        <select name="" id="etaUtente">
-           <option value="minorenne">Minorenne</option>
-           <option value="da 18 a 65">Adulto</option>
-           <option value="Over 65">Over 65</option>
-        </select>   
-    
-        <button id="generaBtn">Genera</button>
-        <button id="resetta">Annulla</button>
+<body>
+    <h2 class="calcola">CALCOLA COSTO DEL BIGLIETTO</h2>
+    <div class="contenitoreBiglietto">
+
+        <div class="contNomeUtente">
+            <label class="color" for="nomeUtente">Nome Utente</label>
+            <input class="pd-5 border-radius" type="text" id="nomeUtente">
+        </div>
+
+        <div class="contPrezzoAlKm">
+            <label class="color" for="prezzoAlKm">Km da Percorrere</label>
+            <input class="pd-5 border-radius" type="text" id="prezzoAlKm">
+        </div>
+
+        <div class="contEtaUtente">
+            <label class="color" for="etaUtente">Età Utente</label>
+            <select class="pd-5 border-radius" name="etaUtente" id="etaUtente">
+                <option value="minorenne">Minorenne</option>
+                <option value="da 18 a 65">Adulto</option>
+                <option value="Over 65">Over 65</option>
+            </select>
+        </div>
+
+        <div class="contBtn">
+            <button class="color pd-5 border-radius" id="generaBtn">Genera</button>
+            <button class="color pd-5 border-radius" id="resetta">Annulla</button>
+        </div>
     </div>
-    
-    <div>
-        <h1>Prezzo Del Biglietto</h1>
-    
-    <h2 id="prezzoFinale"></h2>
+
+    <div class="contenitorePrezzo">
+        
+        <h2>PREZZO DEL BIGLIETTO</h2>
+        
+        <div class="contGenera border-radius">
+            <h2 id="prezzoFinale"></h2>
+        </div>
     </div>
+
+    <!-- ---------------------------------------------- -->
     <script src="./js/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,83 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blueviolet;
+}
+.calcola,
+.contenitorePrezzo {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contenitoreBiglietto {
+    margin: 50px auto;
+    width: 70%;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+.contNomeUtente,
+.contPrezzoAlKm,
+.contEtaUtente,
+.contBtn {
+    width:30% ;
+    text-align: center;
+    margin-top: 20px;   
+}
+
+.contEtaUtente {
+    display: flex;
+    flex-direction: column;
+}
+
+ /*Utility*/
+.color {
+    color: blueviolet;
+}
+.pd-5 {
+    padding: 5px;
+}
+
+.border-radius {
+    border-radius: 5px;
+}
+/************************************************/
+input,
+select {
+    border: 2px solid blueviolet;
+    margin-top: 10px;
+}
+
+label {
+    
+    font-size: 1.3rem;
+}
+ 
+h2 {
+    color: white;
+    margin-bottom: 40px;
+}
+
+#prezzoFinale {
+    color:blueviolet;
+}
+
+.contGenera {
+    margin: auto;
+    width: 50%;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    line-height: 100px;
+}
